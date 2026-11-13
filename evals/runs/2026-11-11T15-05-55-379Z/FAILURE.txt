@@ -1,0 +1,1 @@
+没有 GEMINI_API_KEY，两支视频都没有发送到 Gemini。

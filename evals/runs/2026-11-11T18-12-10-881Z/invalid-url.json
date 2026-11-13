@@ -1,0 +1,20 @@
+{
+  "ok": false,
+  "live": false,
+  "provider": null,
+  "mode": "video",
+  "model": null,
+  "interaction_id": null,
+  "status": null,
+  "duration_ms": 0,
+  "usage": null,
+  "estimated_cost": null,
+  "attempts": [],
+  "metadata": null,
+  "error": {
+    "code": "invalid_url",
+    "message": "这不是可用的公开 YouTube 视频链接。"
+  },
+  "raw_text": null,
+  "repair_attempted": false
+}

@@ -1,0 +1,320 @@
+{
+  "ok": true,
+  "live": true,
+  "provider": "gemini-interactions",
+  "mode": "video",
+  "model": "gemini-3.8-flash",
+  "interaction_id": null,
+  "status": "completed",
+  "duration_ms": 43147,
+  "usage": {
+    "input_tokens": 26301,
+    "output_tokens": 2307,
+    "thought_tokens": 2401,
+    "cached_tokens": 0,
+    "total_tokens": 31009,
+    "input_tokens_by_modality": [
+      {
+        "modality": "video",
+        "tokens": 25586
+      },
+      {
+        "modality": "text",
+        "tokens": 715
+      }
+    ],
+    "raw": {
+      "total_tokens": 31009,
+      "total_input_tokens": 26301,
+      "input_tokens_by_modality": [
+        {
+          "modality": "video",
+          "tokens": 25586
+        },
+        {
+          "modality": "text",
+          "tokens": 715
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_output_tokens": 2307,
+      "total_tool_use_tokens": 0,
+      "total_thought_tokens": 2401,
+      "initial_input_tokens": 26301
+    }
+  },
+  "estimated_cost": {
+    "currency": "USD",
+    "assumed_tier": "paid_standard_through_2026_12_31",
+    "input_usd_per_million": 0.75,
+    "output_usd_per_million": 3.75,
+    "estimated_input_usd": 0.019726,
+    "estimated_output_usd": 0.017655,
+    "estimated_total_usd": 0.037381,
+    "notes": [
+      "gemini-3.8-flash 标准付费层在 2026-12-31 前为输入 $0.75 / 100 万 tokens、输出（含思考 tokens）$3.75 / 100 万 tokens，2027-01-01 起翻倍。免费层标价为 0。来源：https://ai.google.dev/gemini-api/docs/pricing",
+      "官方文档写明 YouTube URL 视频理解仍是预览功能，目前不另收费，价格和限额以后可能变化。来源：https://ai.google.dev/gemini-api/docs/video-understanding",
+      "响应里看不出这次请求走的是免费层还是付费层。金额按付费标准层估算；YouTube URL 预览的实际账单可能是 0。",
+      "估算把 total_output_tokens 与 total_thought_tokens 相加后套用输出单价。如果接口以后把思考 tokens 计入 total_output_tokens，这个估算会偏高。"
+    ]
+  },
+  "warnings": [],
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "ok": true,
+      "status": "completed"
+    }
+  ],
+  "metadata": {
+    "source": "youtube_oembed",
+    "title": "比餐馆的还好吃💯 用Costco 的白蘑菇做蒜香蘑菇炒牛肉片 鲜爽嫩滑 10分钟搞定！",
+    "author_name": "Chaye Cooking 茶叶的一日三餐",
+    "author_url": "https://www.youtube.com/@ChayeCooking",
+    "thumbnail_url": "https://i.ytimg.com/vi/FjfN732wQlU/hqdefault.jpg",
+    "provider_name": "YouTube",
+    "fetch_status": 200,
+    "note": "oEmbed 只提供标题、作者和缩略图，不提供视频简介、字幕、配料或步骤。"
+  },
+  "metadata_comparison": {
+    "metadata_title": "比餐馆的还好吃💯 用Costco 的白蘑菇做蒜香蘑菇炒牛肉片 鲜爽嫩滑 10分钟搞定！",
+    "metadata_author": "Chaye Cooking 茶叶的一日三餐",
+    "extracted_title": "蒜香蘑菇烧牛肉",
+    "extracted_creator": "Chaye Cooking",
+    "title_matches_metadata": false,
+    "creator_matches_metadata": true,
+    "ingredients_beyond_metadata_text": [
+      "蒜蓉",
+      "苏打粉",
+      "玉米淀粉",
+      "生抽",
+      "黑胡椒粉",
+      "食用油",
+      "老抽",
+      "无盐黄油",
+      "盐",
+      "欧芹碎"
+    ],
+    "note": "对照文本只有 oEmbed 标题和作者。标题里没有出现的食材，不能由这份公开元数据解释。"
+  },
+  "recipe": {
+    "title": "蒜香蘑菇烧牛肉",
+    "language": "zh-CN",
+    "source_url": "https://www.youtube.com/watch?v=FjfN732wQlU",
+    "video_id": "FjfN732wQlU",
+    "creator": "Chaye Cooking",
+    "description": "水嫩的白蘑菇搭配嫩滑入味的牛肉片，融合蒜蓉与黄油的浓郁香气，快手家常美味。",
+    "cooking_time": null,
+    "preparation_time": null,
+    "servings": null,
+    "categories": [
+      "热菜",
+      "家常菜",
+      "炒菜"
+    ],
+    "ingredients": [
+      {
+        "name": "牛肉",
+        "normalized_name": "牛肉",
+        "quantity": 320,
+        "unit": "g",
+        "preparation_notes": "切片，屏幕标注320g，口播称约350g",
+        "source_type": "explicit",
+        "evidence_timestamp": "0:11"
+      },
+      {
+        "name": "白蘑菇",
+        "normalized_name": "白蘑菇",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "一盒，快速冲洗后擦干水分，对半切开",
+        "source_type": "unknown",
+        "evidence_timestamp": "1:25"
+      },
+      {
+        "name": "蒜蓉",
+        "normalized_name": "大蒜",
+        "quantity": 2.5,
+        "unit": "瓣",
+        "preparation_notes": "口播称两三瓣大蒜压成蒜蓉",
+        "source_type": "explicit",
+        "evidence_timestamp": "3:26"
+      }
+    ],
+    "seasonings": [
+      {
+        "name": "苏打粉",
+        "normalized_name": "小苏打",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "preparation_notes": "片头字幕写泡打粉，腌制时字幕标注Baking soda苏打粉",
+        "source_type": "explicit",
+        "evidence_timestamp": "0:51"
+      },
+      {
+        "name": "玉米淀粉",
+        "normalized_name": "淀粉",
+        "quantity": 1,
+        "unit": "tsp",
+        "preparation_notes": "可用玉米淀粉或土豆淀粉",
+        "source_type": "explicit",
+        "evidence_timestamp": "0:55"
+      },
+      {
+        "name": "生抽",
+        "normalized_name": "生抽",
+        "quantity": 1,
+        "unit": "tbsp",
+        "preparation_notes": null,
+        "source_type": "explicit",
+        "evidence_timestamp": "0:58"
+      },
+      {
+        "name": "黑胡椒粉",
+        "normalized_name": "黑胡椒",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "适量，研磨加入腌肉及出锅前调味",
+        "source_type": "estimated",
+        "evidence_timestamp": "1:02"
+      },
+      {
+        "name": "食用油",
+        "normalized_name": "食用油",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "腌肉加入1茶匙锁水，炒制时分次加入适量底油",
+        "source_type": "estimated",
+        "evidence_timestamp": "2:01"
+      },
+      {
+        "name": "老抽",
+        "normalized_name": "老抽",
+        "quantity": 1,
+        "unit": "tsp",
+        "preparation_notes": "炒牛肉时上色用",
+        "source_type": "explicit",
+        "evidence_timestamp": "2:19"
+      },
+      {
+        "name": "无盐黄油",
+        "normalized_name": "无盐黄油",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "少量",
+        "source_type": "estimated",
+        "evidence_timestamp": "3:19"
+      },
+      {
+        "name": "盐",
+        "normalized_name": "食盐",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "少许",
+        "source_type": "estimated",
+        "evidence_timestamp": "3:42"
+      },
+      {
+        "name": "欧芹碎",
+        "normalized_name": "欧芹",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "出锅前加入适量增香，亦可用葱花代替",
+        "source_type": "estimated",
+        "evidence_timestamp": "4:04"
+      }
+    ],
+    "cooking_steps": [
+      {
+        "step_number": 1,
+        "instruction": "将牛肉顺纹切成薄厚均匀的片，放入清水中淘洗出血水，然后用手挤干水分放入碗中备用。",
+        "estimated_duration": null,
+        "heat_level": null,
+        "associated_ingredients": [
+          "牛肉"
+        ],
+        "video_timestamp": "0:14",
+        "evidence_notes": "画面展示切牛肉片并在水中淘洗挤干"
+      },
+      {
+        "step_number": 2,
+        "instruction": "牛肉碗中加入小苏打、玉米淀粉、生抽和黑胡椒粉，下手抓拌均匀让肉片裹匀调味料，静置腌制15分钟；腌好后加入1茶匙食用油抓匀锁水。",
+        "estimated_duration": "15分钟",
+        "heat_level": null,
+        "associated_ingredients": [
+          "牛肉",
+          "苏打粉",
+          "玉米淀粉",
+          "生抽",
+          "黑胡椒粉",
+          "食用油"
+        ],
+        "video_timestamp": "0:50",
+        "evidence_notes": "加入调味料抓拌并标注静置腌制15分钟，随后加1茶匙油拌匀"
+      },
+      {
+        "step_number": 3,
+        "instruction": "白蘑菇放入清水中快速冲洗，捞出用厨房纸擦干水分，对半切开装碗备用。",
+        "estimated_duration": null,
+        "heat_level": null,
+        "associated_ingredients": [
+          "白蘑菇"
+        ],
+        "video_timestamp": "1:33",
+        "evidence_notes": "画面展示清洗、擦干水分并切半"
+      },
+      {
+        "step_number": 4,
+        "instruction": "平底锅中倒入少量食用油，冷锅冷油放入牛肉片，开大火翻炒，加入老抽调色，翻炒1至2分钟至牛肉微微变色后盛出备用。",
+        "estimated_duration": "1-2分钟",
+        "heat_level": "大火",
+        "associated_ingredients": [
+          "食用油",
+          "牛肉",
+          "老抽"
+        ],
+        "video_timestamp": "2:12",
+        "evidence_notes": "口播与字幕提到冷锅冷油开大火，加老抽翻炒1到2分钟变色盛出"
+      },
+      {
+        "step_number": 5,
+        "instruction": "锅中重新倒入少许食用油，下入蘑菇大火快速翻炒至微焦黄，加入无盐黄油和蒜蓉爆香，撒入少许食盐翻炒均匀。",
+        "estimated_duration": null,
+        "heat_level": "大火",
+        "associated_ingredients": [
+          "食用油",
+          "白蘑菇",
+          "无盐黄油",
+          "蒜蓉",
+          "盐"
+        ],
+        "video_timestamp": "2:59",
+        "evidence_notes": "画面展示炒蘑菇至焦黄，加入黄油、压入蒜蓉并加盐"
+      },
+      {
+        "step_number": 6,
+        "instruction": "将炒好的牛肉倒回锅中与蘑菇一同翻炒，撒入黑胡椒粉和欧芹碎，翻炒均匀后即可关火出锅装盘。",
+        "estimated_duration": null,
+        "heat_level": null,
+        "associated_ingredients": [
+          "牛肉",
+          "黑胡椒粉",
+          "欧芹碎"
+        ],
+        "video_timestamp": "3:48",
+        "evidence_notes": "画面展示回锅牛肉、撒黑胡椒和欧芹翻炒出锅"
+      }
+    ],
+    "cooking_tips": [
+      "蘑菇很容易被氧化变黑，不要长时间放在室外，建议炒菜前再清洗切开。",
+      "蘑菇不需要长时间翻炒，炒久了容易出水，快速翻炒能保持水嫩口感。",
+      "牛肉腌制好后封入少许食用油，能锁住牛肉内部水分，保持肉质滑嫩入味。"
+    ],
+    "missing_information": [],
+    "uncertain_information": [
+      "牛肉分量屏幕字幕写320g，口播称约350g；片头食材表写泡打粉，实操字幕为Baking soda苏打粉。"
+    ]
+  },
+  "raw_text": "{\n  \"title\": \"蒜香蘑菇烧牛肉\",\n  \"language\": \"zh-CN\",\n  \"source_url\": \"https://www.youtube.com/watch?v=FjfN732wQlU\",\n  \"video_id\": \"FjfN732wQlU\",\n  \"creator\": \"Chaye Cooking\",\n  \"description\": \"水嫩的白蘑菇搭配嫩滑入味的牛肉片，融合蒜蓉与黄油的浓郁香气，快手家常美味。\",\n  \"cooking_time\": null,\n  \"preparation_time\": null,\n  \"servings\": null,\n  \"categories\": [\n    \"热菜\",\n    \"家常菜\",\n    \"炒菜\"\n  ],\n  \"ingredients\": [\n    {\n      \"name\": \"牛肉\",\n      \"normalized_name\": \"牛肉\",\n      \"quantity\": 320,\n      \"unit\": \"g\",\n      \"preparation_notes\": \"切片，屏幕标注320g，口播称约350g\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"0:11\"\n    },\n    {\n      \"name\": \"白蘑菇\",\n      \"normalized_name\": \"白蘑菇\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"一盒，快速冲洗后擦干水分，对半切开\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"1:25\"\n    },\n    {\n      \"name\": \"蒜蓉\",\n      \"normalized_name\": \"大蒜\",\n      \"quantity\": 2.5,\n      \"unit\": \"瓣\",\n      \"preparation_notes\": \"口播称两三瓣大蒜压成蒜蓉\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"3:26\"\n    }\n  ],\n  \"seasonings\": [\n    {\n      \"name\": \"苏打粉\",\n      \"normalized_name\": \"小苏打\",\n      \"quantity\": 0.5,\n      \"unit\": \"tsp\",\n      \"preparation_notes\": \"片头字幕写泡打粉，腌制时字幕标注Baking soda苏打粉\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"0:51\"\n    },\n    {\n      \"name\": \"玉米淀粉\",\n      \"normalized_name\": \"淀粉\",\n      \"quantity\": 1.0,\n      \"unit\": \"tsp\",\n      \"preparation_notes\": \"可用玉米淀粉或土豆淀粉\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"0:55\"\n    },\n    {\n      \"name\": \"生抽\",\n      \"normalized_name\": \"生抽\",\n      \"quantity\": 1.0,\n      \"unit\": \"tbsp\",\n      \"preparation_notes\": null,\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"0:58\"\n    },\n    {\n      \"name\": \"黑胡椒粉\",\n      \"normalized_name\": \"黑胡椒\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"适量，研磨加入腌肉及出锅前调味\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"1:02\"\n    },\n    {\n      \"name\": \"食用油\",\n      \"normalized_name\": \"食用油\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"腌肉加入1茶匙锁水，炒制时分次加入适量底油\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"2:01\"\n    },\n    {\n      \"name\": \"老抽\",\n      \"normalized_name\": \"老抽\",\n      \"quantity\": 1.0,\n      \"unit\": \"tsp\",\n      \"preparation_notes\": \"炒牛肉时上色用\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"2:19\"\n    },\n    {\n      \"name\": \"无盐黄油\",\n      \"normalized_name\": \"无盐黄油\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"少量\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"3:19\"\n    },\n    {\n      \"name\": \"盐\",\n      \"normalized_name\": \"食盐\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"少许\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"3:42\"\n    },\n    {\n      \"name\": \"欧芹碎\",\n      \"normalized_name\": \"欧芹\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"出锅前加入适量增香，亦可用葱花代替\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"4:04\"\n    }\n  ],\n  \"cooking_steps\": [\n    {\n      \"step_number\": 1,\n      \"instruction\": \"将牛肉顺纹切成薄厚均匀的片，放入清水中淘洗出血水，然后用手挤干水分放入碗中备用。\",\n      \"estimated_duration\": null,\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"牛肉\"\n      ],\n      \"video_timestamp\": \"0:14\",\n      \"evidence_notes\": \"画面展示切牛肉片并在水中淘洗挤干\"\n    },\n    {\n      \"step_number\": 2,\n      \"instruction\": \"牛肉碗中加入小苏打、玉米淀粉、生抽和黑胡椒粉，下手抓拌均匀让肉片裹匀调味料，静置腌制15分钟；腌好后加入1茶匙食用油抓匀锁水。\",\n      \"estimated_duration\": \"15分钟\",\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"牛肉\",\n        \"苏打粉\",\n        \"玉米淀粉\",\n        \"生抽\",\n        \"黑胡椒粉\",\n        \"食用油\"\n      ],\n      \"video_timestamp\": \"0:50\",\n      \"evidence_notes\": \"加入调味料抓拌并标注静置腌制15分钟，随后加1茶匙油拌匀\"\n    },\n    {\n      \"step_number\": 3,\n      \"instruction\": \"白蘑菇放入清水中快速冲洗，捞出用厨房纸擦干水分，对半切开装碗备用。\",\n      \"estimated_duration\": null,\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"白蘑菇\"\n      ],\n      \"video_timestamp\": \"1:33\",\n      \"evidence_notes\": \"画面展示清洗、擦干水分并切半\"\n    },\n    {\n      \"step_number\": 4,\n      \"instruction\": \"平底锅中倒入少量食用油，冷锅冷油放入牛肉片，开大火翻炒，加入老抽调色，翻炒1至2分钟至牛肉微微变色后盛出备用。\",\n      \"estimated_duration\": \"1-2分钟\",\n      \"heat_level\": \"大火\",\n      \"associated_ingredients\": [\n        \"食用油\",\n        \"牛肉\",\n        \"老抽\"\n      ],\n      \"video_timestamp\": \"2:12\",\n      \"evidence_notes\": \"口播与字幕提到冷锅冷油开大火，加老抽翻炒1到2分钟变色盛出\"\n    },\n    {\n      \"step_number\": 5,\n      \"instruction\": \"锅中重新倒入少许食用油，下入蘑菇大火快速翻炒至微焦黄，加入无盐黄油和蒜蓉爆香，撒入少许食盐翻炒均匀。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"大火\",\n      \"associated_ingredients\": [\n        \"食用油\",\n        \"白蘑菇\",\n        \"无盐黄油\",\n        \"蒜蓉\",\n        \"盐\"\n      ],\n      \"video_timestamp\": \"2:59\",\n      \"evidence_notes\": \"画面展示炒蘑菇至焦黄，加入黄油、压入蒜蓉并加盐\"\n    },\n    {\n      \"step_number\": 6,\n      \"instruction\": \"将炒好的牛肉倒回锅中与蘑菇一同翻炒，撒入黑胡椒粉和欧芹碎，翻炒均匀后即可关火出锅装盘。\",\n      \"estimated_duration\": null,\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"牛肉\",\n        \"黑胡椒粉\",\n        \"欧芹碎\"\n      ],\n      \"video_timestamp\": \"3:48\",\n      \"evidence_notes\": \"画面展示回锅牛肉、撒黑胡椒和欧芹翻炒出锅\"\n    }\n  ],\n  \"cooking_tips\": [\n    \"蘑菇很容易被氧化变黑，不要长时间放在室外，建议炒菜前再清洗切开。\",\n    \"蘑菇不需要长时间翻炒，炒久了容易出水，快速翻炒能保持水嫩口感。\",\n    \"牛肉腌制好后封入少许食用油，能锁住牛肉内部水分，保持肉质滑嫩入味。\"\n  ],\n  \"missing_information\": [],\n  \"uncertain_information\": [\n    \"牛肉分量屏幕字幕写320g，口播称约350g；片头食材表写泡打粉，实操字幕为Baking soda苏打粉。\"\n  ]\n}",
+  "repair_attempted": false
+}

@@ -1,0 +1,41 @@
+{
+  "ok": false,
+  "live": true,
+  "provider": "gemini-interactions",
+  "mode": "video",
+  "model": null,
+  "interaction_id": null,
+  "status": null,
+  "duration_ms": 281,
+  "usage": null,
+  "estimated_cost": null,
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "ok": false,
+      "error": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'."
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "ok": false,
+      "error": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'."
+    }
+  ],
+  "metadata": {
+    "source": "youtube_oembed",
+    "title": null,
+    "author_name": null,
+    "author_url": null,
+    "thumbnail_url": null,
+    "provider_name": null,
+    "fetch_status": 400,
+    "note": "YouTube oEmbed 返回 HTTP 400。没有取到公开标题或作者。oEmbed 失败不等于视频理解已经失败。"
+  },
+  "error": {
+    "code": "model_unavailable",
+    "message": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'.",
+    "status": 400
+  },
+  "raw_text": null,
+  "repair_attempted": false
+}

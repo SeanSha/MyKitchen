@@ -1,0 +1,44 @@
+[
+  {
+    "label": "虾头烧豆腐",
+    "url": "https://www.youtube.com/watch?v=1BZyz-fw_YE",
+    "metadata": {
+      "source": "youtube_oembed",
+      "title": "【國宴大師•蝦頭燒豆腐】蝦頭別扔掉！試試配上5塊錢豆腐，鮮嫩又下飯～| 老飯骨",
+      "author_name": "老饭骨",
+      "author_url": "https://www.youtube.com/@LaoFanGu",
+      "thumbnail_url": "https://i.ytimg.com/vi/1BZyz-fw_YE/hqdefault.jpg",
+      "provider_name": "YouTube",
+      "fetch_status": 200,
+      "note": "oEmbed 只提供标题、作者和缩略图，不提供视频简介、字幕、配料或步骤。"
+    }
+  },
+  {
+    "label": "蒜香白蘑菇炒牛肉片",
+    "url": "https://www.youtube.com/watch?v=FjfN732wQlU",
+    "metadata": {
+      "source": "youtube_oembed",
+      "title": "比餐馆的还好吃💯 用Costco 的白蘑菇做蒜香蘑菇炒牛肉片 鲜爽嫩滑 10分钟搞定！",
+      "author_name": "Chaye Cooking 茶叶的一日三餐",
+      "author_url": "https://www.youtube.com/@ChayeCooking",
+      "thumbnail_url": "https://i.ytimg.com/vi/FjfN732wQlU/hqdefault.jpg",
+      "provider_name": "YouTube",
+      "fetch_status": 200,
+      "note": "oEmbed 只提供标题、作者和缩略图，不提供视频简介、字幕、配料或步骤。"
+    }
+  },
+  {
+    "label": "无法访问的视频",
+    "url": "https://www.youtube.com/watch?v=aaaaaaaaaaa",
+    "metadata": {
+      "source": "youtube_oembed",
+      "title": null,
+      "author_name": null,
+      "author_url": null,
+      "thumbnail_url": null,
+      "provider_name": null,
+      "fetch_status": 400,
+      "note": "YouTube oEmbed 返回 HTTP 400。没有取到公开标题或作者。oEmbed 失败不等于视频理解已经失败。"
+    }
+  }
+]

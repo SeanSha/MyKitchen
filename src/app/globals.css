@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fff1e6;
+  --color-ink: #4e382c;
+  --color-clay: #d46a52;
+  --color-moss: #6d8f68;
+  --color-line: #f0d8c8;
+  --color-card: #fffaf6;
+  --color-blush: #f8d4cb;
+  --color-butter: #f8e3a8;
+  --color-mint: #d5eadc;
+  --shadow-soft: 0 10px 28px rgb(176 106 74 / 0.08);
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(ellipse 80% 46% at 0% -8%, #ffe4cf, transparent),
+    radial-gradient(ellipse 56% 36% at 100% 0%, #fde8e3, transparent);
+  color: var(--color-ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}

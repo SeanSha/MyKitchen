@@ -1,0 +1,36 @@
+{
+  "ok": false,
+  "live": true,
+  "provider": "gemini-interactions",
+  "mode": "video",
+  "model": null,
+  "interaction_id": null,
+  "status": null,
+  "duration_ms": 353,
+  "usage": null,
+  "estimated_cost": null,
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "ok": false,
+      "error": "Gemini 认证失败：403 The caller does not have permission"
+    }
+  ],
+  "metadata": {
+    "source": "youtube_oembed",
+    "title": null,
+    "author_name": null,
+    "author_url": null,
+    "thumbnail_url": null,
+    "provider_name": null,
+    "fetch_status": 400,
+    "note": "YouTube oEmbed 返回 HTTP 400。没有取到公开标题或作者。oEmbed 失败不等于视频理解已经失败。"
+  },
+  "error": {
+    "code": "auth",
+    "message": "Gemini 认证失败：403 The caller does not have permission",
+    "status": 403
+  },
+  "raw_text": null,
+  "repair_attempted": false
+}

@@ -1,0 +1,51 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { householdSeasoningName, seasoningGroup } from "../src/lib/kitchen/seasoning-groups";
+
+test("seasonings group by how a home kitchen looks for them", () => {
+  assert.equal(seasoningGroup("食盐"), "盐和糖");
+  assert.equal(seasoningGroup("盐（腌肉用）"), "盐和糖");
+  assert.equal(seasoningGroup("液体糖"), "盐和糖");
+  assert.equal(seasoningGroup("白糖"), "盐和糖");
+  assert.equal(seasoningGroup("生抽"), "酱油和醋");
+  assert.equal(seasoningGroup("冰糖老抽"), "酱油和醋");
+  assert.equal(seasoningGroup("上海辣酱油"), "酱油和醋");
+  assert.equal(seasoningGroup("白醋"), "酱油和醋");
+  assert.equal(seasoningGroup("美极鲜味汁"), "酱油和醋");
+  assert.equal(seasoningGroup("料酒（焯水用）"), "酒");
+  assert.equal(seasoningGroup("玫瑰露酒"), "酒");
+  assert.equal(seasoningGroup("香油"), "油");
+  assert.equal(seasoningGroup("无盐黄油"), "油");
+  assert.equal(seasoningGroup("花生油"), "油");
+  assert.equal(seasoningGroup("韩国大酱"), "酱料");
+  assert.equal(seasoningGroup("蚝油"), "酱料");
+  assert.equal(seasoningGroup("虾酱"), "酱料");
+  assert.equal(seasoningGroup("香叶"), "香料");
+  assert.equal(seasoningGroup("黑胡椒粒"), "香料");
+  assert.equal(seasoningGroup("五香粉"), "香料");
+  assert.equal(seasoningGroup("红椒粉 (Paprika)"), "香料");
+  assert.equal(seasoningGroup("玉米淀粉"), "淀粉和提鲜");
+  assert.equal(seasoningGroup("水淀粉"), "淀粉和提鲜");
+  assert.equal(seasoningGroup("味精"), "淀粉和提鲜");
+  assert.equal(seasoningGroup("开水"), "其他");
+  assert.equal(seasoningGroup("水"), "其他");
+});
+
+test("salt and sugar collapse to what a home kitchen actually keeps", () => {
+  assert.equal(householdSeasoningName("食盐"), "精盐");
+  assert.equal(householdSeasoningName("盐"), "精盐");
+  assert.equal(householdSeasoningName("盐（面粉调味用）"), "精盐");
+  assert.equal(householdSeasoningName("盐（腌肉用）"), "精盐");
+  assert.equal(householdSeasoningName("食盐（浸泡葱姜）"), "精盐");
+  assert.equal(householdSeasoningName("粗盐"), "粗盐");
+  assert.equal(householdSeasoningName("白糖（和面用）"), "白糖");
+  assert.equal(householdSeasoningName("白糖（肉馅用）"), "白糖");
+  assert.equal(householdSeasoningName("细砂糖（腌肉用）"), "白糖");
+  assert.equal(householdSeasoningName("细砂糖（蘸料用）"), "白糖");
+  assert.equal(householdSeasoningName("液体糖"), "白糖");
+  assert.equal(householdSeasoningName("糖"), "白糖");
+  assert.equal(householdSeasoningName("冰糖"), "冰糖");
+  assert.equal(householdSeasoningName("冰糖老抽"), "冰糖老抽");
+  assert.equal(householdSeasoningName("料酒（焯水用）"), "料酒");
+  assert.equal(householdSeasoningName("无盐黄油"), "无盐黄油");
+});

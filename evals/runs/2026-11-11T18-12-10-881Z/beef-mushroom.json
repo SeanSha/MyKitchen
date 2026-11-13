@@ -1,0 +1,41 @@
+{
+  "ok": false,
+  "live": true,
+  "provider": "gemini-interactions",
+  "mode": "video",
+  "model": null,
+  "interaction_id": null,
+  "status": null,
+  "duration_ms": 280,
+  "usage": null,
+  "estimated_cost": null,
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "ok": false,
+      "error": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'."
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "ok": false,
+      "error": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'."
+    }
+  ],
+  "metadata": {
+    "source": "youtube_oembed",
+    "title": "比餐馆的还好吃💯 用Costco 的白蘑菇做蒜香蘑菇炒牛肉片 鲜爽嫩滑 10分钟搞定！",
+    "author_name": "Chaye Cooking 茶叶的一日三餐",
+    "author_url": "https://www.youtube.com/@ChayeCooking",
+    "thumbnail_url": "https://i.ytimg.com/vi/FjfN732wQlU/hqdefault.jpg",
+    "provider_name": "YouTube",
+    "fetch_status": 200,
+    "note": "oEmbed 只提供标题、作者和缩略图，不提供视频简介、字幕、配料或步骤。"
+  },
+  "error": {
+    "code": "model_unavailable",
+    "message": "模型不可用：400 The value 'video' is not supported for 'input[1].type' in v1, it is available in v1beta. Change your version to v1beta to use this (https://ai.google.dev/gemini-api/docs/api-versions). Supported values: 'code_execution_call', 'code_execution_result', 'file_search_call', 'file_search_result', 'function_call', 'function_result', 'google_maps_call', 'google_maps_result', 'google_search_call', 'google_search_result', 'mcp_server_tool_call', 'mcp_server_tool_result', 'model_output', 'processing_call', 'processing_result', 'thought', 'url_context_call', 'url_context_result', 'user_input'.",
+    "status": 400
+  },
+  "raw_text": null,
+  "repair_attempted": false
+}

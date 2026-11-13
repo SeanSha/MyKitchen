@@ -1,0 +1,409 @@
+{
+  "ok": true,
+  "live": true,
+  "provider": "gemini-interactions",
+  "mode": "video",
+  "model": "gemini-3.8-flash",
+  "interaction_id": null,
+  "status": "completed",
+  "duration_ms": 37635,
+  "usage": {
+    "input_tokens": 41031,
+    "output_tokens": 3473,
+    "thought_tokens": 302,
+    "cached_tokens": 0,
+    "total_tokens": 44806,
+    "input_tokens_by_modality": [
+      {
+        "modality": "video",
+        "tokens": 40324
+      },
+      {
+        "modality": "text",
+        "tokens": 707
+      }
+    ],
+    "raw": {
+      "total_tokens": 44806,
+      "total_input_tokens": 41031,
+      "input_tokens_by_modality": [
+        {
+          "modality": "video",
+          "tokens": 40324
+        },
+        {
+          "modality": "text",
+          "tokens": 707
+        }
+      ],
+      "total_cached_tokens": 0,
+      "total_output_tokens": 3473,
+      "total_tool_use_tokens": 0,
+      "total_thought_tokens": 302,
+      "initial_input_tokens": 41031
+    }
+  },
+  "estimated_cost": {
+    "currency": "USD",
+    "assumed_tier": "paid_standard_through_2026_12_31",
+    "input_usd_per_million": 0.75,
+    "output_usd_per_million": 3.75,
+    "estimated_input_usd": 0.030773,
+    "estimated_output_usd": 0.014156,
+    "estimated_total_usd": 0.04493,
+    "notes": [
+      "gemini-3.8-flash 标准付费层在 2026-12-31 前为输入 $0.75 / 100 万 tokens、输出（含思考 tokens）$3.75 / 100 万 tokens，2027-01-01 起翻倍。免费层标价为 0。来源：https://ai.google.dev/gemini-api/docs/pricing",
+      "官方文档写明 YouTube URL 视频理解仍是预览功能，目前不另收费，价格和限额以后可能变化。来源：https://ai.google.dev/gemini-api/docs/video-understanding",
+      "响应里看不出这次请求走的是免费层还是付费层。金额按付费标准层估算；YouTube URL 预览的实际账单可能是 0。",
+      "估算把 total_output_tokens 与 total_thought_tokens 相加后套用输出单价。如果接口以后把思考 tokens 计入 total_output_tokens，这个估算会偏高。"
+    ]
+  },
+  "warnings": [],
+  "attempts": [
+    {
+      "model": "gemini-3.8-flash",
+      "ok": true,
+      "status": "completed"
+    }
+  ],
+  "metadata": {
+    "source": "youtube_oembed",
+    "title": "【國宴大師•蝦頭燒豆腐】蝦頭別扔掉！試試配上5塊錢豆腐，鮮嫩又下飯～| 老飯骨",
+    "author_name": "老饭骨",
+    "author_url": "https://www.youtube.com/@LaoFanGu",
+    "thumbnail_url": "https://i.ytimg.com/vi/1BZyz-fw_YE/hqdefault.jpg",
+    "provider_name": "YouTube",
+    "fetch_status": 200,
+    "note": "oEmbed 只提供标题、作者和缩略图，不提供视频简介、字幕、配料或步骤。"
+  },
+  "metadata_comparison": {
+    "metadata_title": "【國宴大師•蝦頭燒豆腐】蝦頭別扔掉！試試配上5塊錢豆腐，鮮嫩又下飯～| 老飯骨",
+    "metadata_author": "老饭骨",
+    "extracted_title": "虾头烧豆腐",
+    "extracted_creator": "老饭骨",
+    "title_matches_metadata": false,
+    "creator_matches_metadata": true,
+    "ingredients_beyond_metadata_text": [
+      "韧豆腐",
+      "虾头",
+      "生姜",
+      "大葱",
+      "熟咸鸭蛋黄",
+      "胡萝卜",
+      "盐",
+      "白胡椒粉",
+      "黄酒",
+      "白糖",
+      "味精",
+      "水淀粉",
+      "葱油",
+      "食用油",
+      "开水"
+    ],
+    "note": "对照文本只有 oEmbed 标题和作者。标题里没有出现的食材，不能由这份公开元数据解释。"
+  },
+  "recipe": {
+    "title": "虾头烧豆腐",
+    "language": "zh-CN",
+    "source_url": "https://www.youtube.com/watch?v=1BZyz-fw_YE",
+    "video_id": "1BZyz-fw_YE",
+    "creator": "老饭骨",
+    "description": "老饭骨传授家常名厨菜虾头烧豆腐，利用吃虾剩下的虾头炼出浓郁虾油和鲜美虾汤，搭配韧豆腐、咸鸭蛋黄与胡萝卜碎，色泽红亮如蟹粉豆腐，鲜香味浓。",
+    "cooking_time": null,
+    "preparation_time": null,
+    "servings": null,
+    "categories": [
+      "热菜",
+      "家常菜",
+      "海鲜家常"
+    ],
+    "ingredients": [
+      {
+        "name": "韧豆腐",
+        "normalized_name": "豆腐",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "片去老皮，切成均匀的四方小丁",
+        "source_type": "unknown",
+        "evidence_timestamp": "0:12"
+      },
+      {
+        "name": "虾头",
+        "normalized_name": "虾头",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "鲜虾剥肉后留下的虾头，清洗沥干",
+        "source_type": "unknown",
+        "evidence_timestamp": "1:24"
+      },
+      {
+        "name": "生姜",
+        "normalized_name": "姜",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "一部分切大片煸虾头，一部分切细末备用",
+        "source_type": "unknown",
+        "evidence_timestamp": "1:18"
+      },
+      {
+        "name": "大葱",
+        "normalized_name": "大葱",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "切滚刀块/斜段，出锅装盘前另备少许葱花",
+        "source_type": "unknown",
+        "evidence_timestamp": "2:08"
+      },
+      {
+        "name": "熟咸鸭蛋黄",
+        "normalized_name": "咸蛋黄",
+        "quantity": 1,
+        "unit": "个",
+        "preparation_notes": "取出蛋黄，用菜刀压抹成泥状",
+        "source_type": "explicit",
+        "evidence_timestamp": "3:18"
+      },
+      {
+        "name": "胡萝卜",
+        "normalized_name": "胡萝卜",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "取外层红皮部分，先切条再用刀拍碎，最后切成细末仿蟹黄",
+        "source_type": "unknown",
+        "evidence_timestamp": "3:25"
+      }
+    ],
+    "seasonings": [
+      {
+        "name": "盐",
+        "normalized_name": "盐",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "适量，温水浸泡豆腐时加入入底味并使豆腐紧实，烧制调味时再加少许",
+        "source_type": "estimated",
+        "evidence_timestamp": "0:47"
+      },
+      {
+        "name": "白胡椒粉",
+        "normalized_name": "胡椒粉",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "多放一点，煸炒虾头时加入去腥",
+        "source_type": "estimated",
+        "evidence_timestamp": "2:29"
+      },
+      {
+        "name": "黄酒",
+        "normalized_name": "黄酒",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "沿锅边烹入去腥增香",
+        "source_type": "unknown",
+        "evidence_timestamp": "2:43"
+      },
+      {
+        "name": "白糖",
+        "normalized_name": "白糖",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "一点点，用于提鲜",
+        "source_type": "estimated",
+        "evidence_timestamp": "5:24"
+      },
+      {
+        "name": "味精",
+        "normalized_name": "味精",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "少许提鲜",
+        "source_type": "estimated",
+        "evidence_timestamp": "5:26"
+      },
+      {
+        "name": "水淀粉",
+        "normalized_name": "水淀粉",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "勾芡使用",
+        "source_type": "unknown",
+        "evidence_timestamp": "5:37"
+      },
+      {
+        "name": "葱油",
+        "normalized_name": "葱油",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "出锅前淋入增香增亮",
+        "source_type": "unknown",
+        "evidence_timestamp": "6:00"
+      },
+      {
+        "name": "食用油",
+        "normalized_name": "食用油",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "煸炒虾头及煸炒蛋黄胡萝卜时使用",
+        "source_type": "unknown",
+        "evidence_timestamp": "1:11"
+      },
+      {
+        "name": "开水",
+        "normalized_name": "水",
+        "quantity": null,
+        "unit": null,
+        "preparation_notes": "加在煸透的虾头中熬煮虾汤",
+        "source_type": "unknown",
+        "evidence_timestamp": "2:53"
+      }
+    ],
+    "cooking_steps": [
+      {
+        "step_number": 1,
+        "instruction": "韧豆腐片去外层硬皮，改刀切成均匀的小方丁。",
+        "estimated_duration": null,
+        "heat_level": null,
+        "associated_ingredients": [
+          "韧豆腐"
+        ],
+        "video_timestamp": "0:18",
+        "evidence_notes": "大厨将豆腐表面老皮切除后切成小方丁"
+      },
+      {
+        "step_number": 2,
+        "instruction": "锅中倒入冷水，放入切好的豆腐丁，撒入适量食盐，开小火加热，切记不要烧至沸腾，快开锅时关火，让豆腐在温盐水中浸泡保温入味、增加弹性。",
+        "estimated_duration": null,
+        "heat_level": "小火",
+        "associated_ingredients": [
+          "韧豆腐",
+          "盐"
+        ],
+        "video_timestamp": "0:44",
+        "evidence_notes": "豆腐凉水下锅，小火煨不要开锅，加盐使蛋白凝固更有弹性并入底味"
+      },
+      {
+        "step_number": 3,
+        "instruction": "另起炒锅倒油烧热，先下入姜片煸炒出香味，再倒入虾头，用炒勺反复按压虾头挤出虾油，待虾头泛红变色。",
+        "estimated_duration": null,
+        "heat_level": "中火",
+        "associated_ingredients": [
+          "食用油",
+          "生姜",
+          "虾头"
+        ],
+        "video_timestamp": "1:11",
+        "evidence_notes": "油热先下姜片出香，下虾头并拿勺子按压让虾油充分出来"
+      },
+      {
+        "step_number": 4,
+        "instruction": "下入葱段继续翻炒按压，随后撒入白胡椒粉翻炒去腥，沿锅边烹入黄酒激发出香气。",
+        "estimated_duration": null,
+        "heat_level": "中大火",
+        "associated_ingredients": [
+          "大葱",
+          "白胡椒粉",
+          "黄酒"
+        ],
+        "video_timestamp": "2:08",
+        "evidence_notes": "下葱段边煸边挤虾油，加胡椒粉去腥，沿锅边淋入黄酒"
+      },
+      {
+        "step_number": 5,
+        "instruction": "往锅中倒入适量开水，大火烧开熬煮片刻，让虾油与虾的鲜味完全融入汤中，熬成红亮浓郁的虾汤。",
+        "estimated_duration": null,
+        "heat_level": "大火",
+        "associated_ingredients": [
+          "开水"
+        ],
+        "video_timestamp": "2:53",
+        "evidence_notes": "加入开水大火烧开，让虾头里的虾油溶解到汤里"
+      },
+      {
+        "step_number": 6,
+        "instruction": "用漏勺将虾汤过滤到大碗中，静置沉淀备用；将熟咸鸭蛋黄压成泥，胡萝卜去芯后拍碎切成细末，生姜切末备用。",
+        "estimated_duration": null,
+        "heat_level": null,
+        "associated_ingredients": [
+          "熟咸鸭蛋黄",
+          "胡萝卜",
+          "生姜"
+        ],
+        "video_timestamp": "3:18",
+        "evidence_notes": "虾汤滤出，咸蛋黄抹碎，胡萝卜切条拍碎切末仿蟹黄"
+      },
+      {
+        "step_number": 7,
+        "instruction": "净锅热锅凉油，油量少许，先下姜末煸香，再下入咸鸭蛋黄泥和胡萝卜碎，小火煸炒起沙翻出红油。",
+        "estimated_duration": null,
+        "heat_level": "小火",
+        "associated_ingredients": [
+          "食用油",
+          "生姜",
+          "熟咸鸭蛋黄",
+          "胡萝卜"
+        ],
+        "video_timestamp": "4:05",
+        "evidence_notes": "热锅凉油下姜末，下蛋黄和胡萝卜末煸出红色和沙蓉"
+      },
+      {
+        "step_number": 8,
+        "instruction": "将沉淀好的大部分虾汤（注意避开碗底可能存在的细沙）倒回锅中，大火烧开，让胡萝卜末充分软化，汤汁微微发稠。",
+        "estimated_duration": null,
+        "heat_level": "大火",
+        "associated_ingredients": [],
+        "video_timestamp": "4:45",
+        "evidence_notes": "倒入过滤沉淀后的虾汤，大火熬软胡萝卜"
+      },
+      {
+        "step_number": 9,
+        "instruction": "捞出浸泡好的豆腐丁下入汤锅中，转小火慢炖约5分钟使豆腐充分入味；炖煮期间可补入静置碗中澄清的红亮虾油。",
+        "estimated_duration": "5分钟",
+        "heat_level": "小火",
+        "associated_ingredients": [
+          "韧豆腐"
+        ],
+        "video_timestamp": "4:59",
+        "evidence_notes": "捞豆腐下锅，小火慢炖5分钟入味，舀入表层虾油提色"
+      },
+      {
+        "step_number": 10,
+        "instruction": "调入少许盐、白糖和味精调味，继续咕嘟收浓入味。",
+        "estimated_duration": null,
+        "heat_level": "中小火",
+        "associated_ingredients": [
+          "盐",
+          "白糖",
+          "味精"
+        ],
+        "video_timestamp": "5:20",
+        "evidence_notes": "调入盐、白糖、味精翻匀熬煮"
+      },
+      {
+        "step_number": 11,
+        "instruction": "汤汁变黏稠后淋入水淀粉勾芡，稍作观察，若豆腐出水汤汁稀释则二次补芡，最后淋入葱油增亮出香，翻匀出锅装盘，撒上葱花即可。",
+        "estimated_duration": null,
+        "heat_level": "中小火",
+        "associated_ingredients": [
+          "水淀粉",
+          "葱油",
+          "大葱"
+        ],
+        "video_timestamp": "5:37",
+        "evidence_notes": "分次淋入水淀粉勾芡，最后淋纯葱油增香，出锅撒小葱花"
+      }
+    ],
+    "cooking_tips": [
+      "豆腐尽量选择韧豆腐，既有韧劲不易碎，口感又嫩滑入味；在家制作可留皮，宴席标准需切除表面老皮以保证均匀入味与口感。",
+      "煮/泡豆腐切忌开锅沸腾，水温过高会导致豆腐产生蜂窝眼变老变柴；凉水下锅加入少许盐，小火煨至微滚关火浸泡，可使豆腐内部紧致有弹性并带底味。",
+      "煸炒虾头时一定要用勺子反复碾压，将虾脑和虾青素充分挤压出来，加开水大火煮出的虾汤更红润醇厚。",
+      "过滤虾汤后务必静置沉淀片刻，倒汤时留住碗底，避免虾头残留的沙子混入菜中影响口感。",
+      "胡萝卜仅取外皮红润部分并用刀拍碎再切末，煸炒后呈现出如蟹黄般的色泽与颗粒感。",
+      "由于豆腐含水丰富容易吐水稀释芡汁，勾芡需观察片刻，必要时进行二次补芡，使浓郁汤汁紧紧包裹在豆腐表面。"
+    ],
+    "missing_information": [
+      "具体调味料及食材的精确克数/毫升数视频中未标明，依大厨经验适量添加"
+    ],
+    "uncertain_information": []
+  },
+  "raw_text": "{\n  \"title\": \"虾头烧豆腐\",\n  \"language\": \"zh-CN\",\n  \"source_url\": \"https://www.youtube.com/watch?v=1BZyz-fw_YE\",\n  \"video_id\": \"1BZyz-fw_YE\",\n  \"creator\": \"老饭骨\",\n  \"description\": \"老饭骨传授家常名厨菜虾头烧豆腐，利用吃虾剩下的虾头炼出浓郁虾油和鲜美虾汤，搭配韧豆腐、咸鸭蛋黄与胡萝卜碎，色泽红亮如蟹粉豆腐，鲜香味浓。\",\n  \"cooking_time\": null,\n  \"preparation_time\": null,\n  \"servings\": null,\n  \"categories\": [\n    \"热菜\",\n    \"家常菜\",\n    \"海鲜家常\"\n  ],\n  \"ingredients\": [\n    {\n      \"name\": \"韧豆腐\",\n      \"normalized_name\": \"豆腐\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"片去老皮，切成均匀的四方小丁\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"0:12\"\n    },\n    {\n      \"name\": \"虾头\",\n      \"normalized_name\": \"虾头\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"鲜虾剥肉后留下的虾头，清洗沥干\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"1:24\"\n    },\n    {\n      \"name\": \"生姜\",\n      \"normalized_name\": \"姜\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"一部分切大片煸虾头，一部分切细末备用\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"1:18\"\n    },\n    {\n      \"name\": \"大葱\",\n      \"normalized_name\": \"大葱\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"切滚刀块/斜段，出锅装盘前另备少许葱花\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"2:08\"\n    },\n    {\n      \"name\": \"熟咸鸭蛋黄\",\n      \"normalized_name\": \"咸蛋黄\",\n      \"quantity\": 1,\n      \"unit\": \"个\",\n      \"preparation_notes\": \"取出蛋黄，用菜刀压抹成泥状\",\n      \"source_type\": \"explicit\",\n      \"evidence_timestamp\": \"3:18\"\n    },\n    {\n      \"name\": \"胡萝卜\",\n      \"normalized_name\": \"胡萝卜\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"取外层红皮部分，先切条再用刀拍碎，最后切成细末仿蟹黄\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"3:25\"\n    }\n  ],\n  \"seasonings\": [\n    {\n      \"name\": \"盐\",\n      \"normalized_name\": \"盐\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"适量，温水浸泡豆腐时加入入底味并使豆腐紧实，烧制调味时再加少许\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"0:47\"\n    },\n    {\n      \"name\": \"白胡椒粉\",\n      \"normalized_name\": \"胡椒粉\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"多放一点，煸炒虾头时加入去腥\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"2:29\"\n    },\n    {\n      \"name\": \"黄酒\",\n      \"normalized_name\": \"黄酒\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"沿锅边烹入去腥增香\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"2:43\"\n    },\n    {\n      \"name\": \"白糖\",\n      \"normalized_name\": \"白糖\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"一点点，用于提鲜\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"5:24\"\n    },\n    {\n      \"name\": \"味精\",\n      \"normalized_name\": \"味精\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"少许提鲜\",\n      \"source_type\": \"estimated\",\n      \"evidence_timestamp\": \"5:26\"\n    },\n    {\n      \"name\": \"水淀粉\",\n      \"normalized_name\": \"水淀粉\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"勾芡使用\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"5:37\"\n    },\n    {\n      \"name\": \"葱油\",\n      \"normalized_name\": \"葱油\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"出锅前淋入增香增亮\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"6:00\"\n    },\n    {\n      \"name\": \"食用油\",\n      \"normalized_name\": \"食用油\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"煸炒虾头及煸炒蛋黄胡萝卜时使用\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"1:11\"\n    },\n    {\n      \"name\": \"开水\",\n      \"normalized_name\": \"水\",\n      \"quantity\": null,\n      \"unit\": null,\n      \"preparation_notes\": \"加在煸透的虾头中熬煮虾汤\",\n      \"source_type\": \"unknown\",\n      \"evidence_timestamp\": \"2:53\"\n    }\n  ],\n  \"cooking_steps\": [\n    {\n      \"step_number\": 1,\n      \"instruction\": \"韧豆腐片去外层硬皮，改刀切成均匀的小方丁。\",\n      \"estimated_duration\": null,\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"韧豆腐\"\n      ],\n      \"video_timestamp\": \"0:18\",\n      \"evidence_notes\": \"大厨将豆腐表面老皮切除后切成小方丁\"\n    },\n    {\n      \"step_number\": 2,\n      \"instruction\": \"锅中倒入冷水，放入切好的豆腐丁，撒入适量食盐，开小火加热，切记不要烧至沸腾，快开锅时关火，让豆腐在温盐水中浸泡保温入味、增加弹性。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"小火\",\n      \"associated_ingredients\": [\n        \"韧豆腐\",\n        \"盐\"\n      ],\n      \"video_timestamp\": \"0:44\",\n      \"evidence_notes\": \"豆腐凉水下锅，小火煨不要开锅，加盐使蛋白凝固更有弹性并入底味\"\n    },\n    {\n      \"step_number\": 3,\n      \"instruction\": \"另起炒锅倒油烧热，先下入姜片煸炒出香味，再倒入虾头，用炒勺反复按压虾头挤出虾油，待虾头泛红变色。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"中火\",\n      \"associated_ingredients\": [\n        \"食用油\",\n        \"生姜\",\n        \"虾头\"\n      ],\n      \"video_timestamp\": \"1:11\",\n      \"evidence_notes\": \"油热先下姜片出香，下虾头并拿勺子按压让虾油充分出来\"\n    },\n    {\n      \"step_number\": 4,\n      \"instruction\": \"下入葱段继续翻炒按压，随后撒入白胡椒粉翻炒去腥，沿锅边烹入黄酒激发出香气。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"中大火\",\n      \"associated_ingredients\": [\n        \"大葱\",\n        \"白胡椒粉\",\n        \"黄酒\"\n      ],\n      \"video_timestamp\": \"2:08\",\n      \"evidence_notes\": \"下葱段边煸边挤虾油，加胡椒粉去腥，沿锅边淋入黄酒\"\n    },\n    {\n      \"step_number\": 5,\n      \"instruction\": \"往锅中倒入适量开水，大火烧开熬煮片刻，让虾油与虾的鲜味完全融入汤中，熬成红亮浓郁的虾汤。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"大火\",\n      \"associated_ingredients\": [\n        \"开水\"\n      ],\n      \"video_timestamp\": \"2:53\",\n      \"evidence_notes\": \"加入开水大火烧开，让虾头里的虾油溶解到汤里\"\n    },\n    {\n      \"step_number\": 6,\n      \"instruction\": \"用漏勺将虾汤过滤到大碗中，静置沉淀备用；将熟咸鸭蛋黄压成泥，胡萝卜去芯后拍碎切成细末，生姜切末备用。\",\n      \"estimated_duration\": null,\n      \"heat_level\": null,\n      \"associated_ingredients\": [\n        \"熟咸鸭蛋黄\",\n        \"胡萝卜\",\n        \"生姜\"\n      ],\n      \"video_timestamp\": \"3:18\",\n      \"evidence_notes\": \"虾汤滤出，咸蛋黄抹碎，胡萝卜切条拍碎切末仿蟹黄\"\n    },\n    {\n      \"step_number\": 7,\n      \"instruction\": \"净锅热锅凉油，油量少许，先下姜末煸香，再下入咸鸭蛋黄泥和胡萝卜碎，小火煸炒起沙翻出红油。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"小火\",\n      \"associated_ingredients\": [\n        \"食用油\",\n        \"生姜\",\n        \"熟咸鸭蛋黄\",\n        \"胡萝卜\"\n      ],\n      \"video_timestamp\": \"4:05\",\n      \"evidence_notes\": \"热锅凉油下姜末，下蛋黄和胡萝卜末煸出红色和沙蓉\"\n    },\n    {\n      \"step_number\": 8,\n      \"instruction\": \"将沉淀好的大部分虾汤（注意避开碗底可能存在的细沙）倒回锅中，大火烧开，让胡萝卜末充分软化，汤汁微微发稠。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"大火\",\n      \"associated_ingredients\": [],\n      \"video_timestamp\": \"4:45\",\n      \"evidence_notes\": \"倒入过滤沉淀后的虾汤，大火熬软胡萝卜\"\n    },\n    {\n      \"step_number\": 9,\n      \"instruction\": \"捞出浸泡好的豆腐丁下入汤锅中，转小火慢炖约5分钟使豆腐充分入味；炖煮期间可补入静置碗中澄清的红亮虾油。\",\n      \"estimated_duration\": \"5分钟\",\n      \"heat_level\": \"小火\",\n      \"associated_ingredients\": [\n        \"韧豆腐\"\n      ],\n      \"video_timestamp\": \"4:59\",\n      \"evidence_notes\": \"捞豆腐下锅，小火慢炖5分钟入味，舀入表层虾油提色\"\n    },\n    {\n      \"step_number\": 10,\n      \"instruction\": \"调入少许盐、白糖和味精调味，继续咕嘟收浓入味。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"中小火\",\n      \"associated_ingredients\": [\n        \"盐\",\n        \"白糖\",\n        \"味精\"\n      ],\n      \"video_timestamp\": \"5:20\",\n      \"evidence_notes\": \"调入盐、白糖、味精翻匀熬煮\"\n    },\n    {\n      \"step_number\": 11,\n      \"instruction\": \"汤汁变黏稠后淋入水淀粉勾芡，稍作观察，若豆腐出水汤汁稀释则二次补芡，最后淋入葱油增亮出香，翻匀出锅装盘，撒上葱花即可。\",\n      \"estimated_duration\": null,\n      \"heat_level\": \"中小火\",\n      \"associated_ingredients\": [\n        \"水淀粉\",\n        \"葱油\",\n        \"大葱\"\n      ],\n      \"video_timestamp\": \"5:37\",\n      \"evidence_notes\": \"分次淋入水淀粉勾芡，最后淋纯葱油增香，出锅撒小葱花\"\n    }\n  ],\n  \"cooking_tips\": [\n    \"豆腐尽量选择韧豆腐，既有韧劲不易碎，口感又嫩滑入味；在家制作可留皮，宴席标准需切除表面老皮以保证均匀入味与口感。\",\n    \"煮/泡豆腐切忌开锅沸腾，水温过高会导致豆腐产生蜂窝眼变老变柴；凉水下锅加入少许盐，小火煨至微滚关火浸泡，可使豆腐内部紧致有弹性并带底味。\",\n    \"煸炒虾头时一定要用勺子反复碾压，将虾脑和虾青素充分挤压出来，加开水大火煮出的虾汤更红润醇厚。\",\n    \"过滤虾汤后务必静置沉淀片刻，倒汤时留住碗底，避免虾头残留的沙子混入菜中影响口感。\",\n    \"胡萝卜仅取外皮红润部分并用刀拍碎再切末，煸炒后呈现出如蟹黄般的色泽与颗粒感。\",\n    \"由于豆腐含水丰富容易吐水稀释芡汁，勾芡需观察片刻，必要时进行二次补芡，使浓郁汤汁紧紧包裹在豆腐表面。\"\n  ],\n  \"missing_information\": [\n    \"具体调味料及食材的精确克数/毫升数视频中未标明，依大厨经验适量添加\"\n  ],\n  \"uncertain_information\": []\n}",
+  "repair_attempted": false
+}
